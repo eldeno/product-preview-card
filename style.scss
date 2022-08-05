@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  @media screen and (max-width: 600px) {
+    height: auto;
+  }
+}
+
+.card {
+  display: flex;
+  width: 600px;
+  height: 450px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+
+  .product-image {
+    background-image: url('../images/image-product-desktop.jpg');
+    background-size: cover;
+    min-width: 300px;
+    height: 100%;
+  }
+
+  .product-info {
+    width: 300px;
+    height: 100%;
+    padding: 32px;
+    color: hsl(228, 12%, 48%);
+
+    .product-type {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+
+    .product-title {
+      font-family: 'Fraunces', serif;
+      color: hsl(212, 21%, 14%);
+      font-size: 36px;
+      margin-bottom: 20px;
+      line-height: 35px;
+    }
+
+    .product-description {
+      line-height: 23px;
+      margin-bottom: 20px;
+      width: 236px;
+      letter-spacing: 1px;
+    }
+
+    .product-price {
+      font-family: 'Fraunces', serif;
+      margin-bottom: 20px;
+      display: flex;
+      width: 236px;
+
+      .promotion-price {
+        font-size: 36px;
+        color: hsl(158, 36%, 37%);
+      }
+      
+      .previous-price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: line-through;
+        width: 100%;
+      }
+    }
+
+    .btn {
+      background-color: hsl(158, 36%, 37%);
+      border: none;
+      text-decoration: none;
+      padding: 14px;
+      width: 236px;
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color:hsl(0, 0%, 100%);
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:active {
+       background-color: hsl(156, 42, 18)
+      }
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 340px;
+    height: auto;
+    margin: 10px 0;
+
+    .product-image {
+      background-image: url('../images/image-product-mobile.jpg');
+      background-size: cover;
+      min-height: 238px;
+    }
+  }
+}
+
+// Attribution
+.attribution {
+  text-align: center;
+  margin-bottom: 10px;
+}

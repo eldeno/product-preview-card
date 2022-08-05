@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f2ebe3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  height: 450px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .product-image {
+  background-image: url("../images/image-product-desktop.jpg");
+  background-size: cover;
+  min-width: 300px;
+  height: 100%;
+}
+
+.card .product-info {
+  width: 300px;
+  height: 100%;
+  padding: 32px;
+  color: #6c7289;
+}
+
+.card .product-info .product-type {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.card .product-info .product-title {
+  font-family: 'Fraunces', serif;
+  color: #1c232b;
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+.card .product-info .product-description {
+  line-height: 23px;
+  margin-bottom: 20px;
+  width: 236px;
+  letter-spacing: 1px;
+}
+
+.card .product-info .product-price {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 236px;
+}
+
+.card .product-info .product-price .promotion-price {
+  font-size: 36px;
+  color: #3c8067;
+}
+
+.card .product-info .product-price .previous-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: line-through;
+  width: 100%;
+}
+
+.card .product-info .btn {
+  background-color: #3c8067;
+  border: none;
+  text-decoration: none;
+  padding: 14px;
+  width: 236px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.card .product-info .btn:hover {
+  cursor: pointer;
+}
+
+.card .product-info .btn:active {
+  background-color: #1b4132;
+}
+
+.card .product-info .btn i {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 340px;
+    height: auto;
+    margin: 10px 0;
+  }
+  .card .product-image {
+    background-image: url("../images/image-product-mobile.jpg");
+    background-size: cover;
+    min-height: 238px;
+  }
+}
+
+.attribution {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
