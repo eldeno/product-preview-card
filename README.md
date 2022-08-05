@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/eldeno/product-preview-card)
-- Live Site URL: [Add live site URL here](https://eldeno.github.io/product-preview-card/)
+- Solution URL: [Github](https://github.com/eldeno/product-preview-card)
+- Live Site URL: [Link](https://eldeno.github.io/product-preview-card/)
 
 ## My process
 
